@@ -21,7 +21,6 @@ namespace Cw1
                 throw new ArgumentNullException();
             }
 
-            // simple regex for website
             var websiteAddressRegex = new Regex("https://[a-z.]+");
             MatchCollection matchesWebsiteAddress = websiteAddressRegex.Matches(websiteAddress);
 
